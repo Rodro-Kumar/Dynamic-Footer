@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --DMsans: "DM Sans", sans-serif;
+}
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+  * {
+    @apply m-0 p-0 outline-none box-border;
+  }
+
+  a {
+    @apply no-underline;
+    font-family: var(--DMsans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  li,
+  ul,
+  a,
+  img {
+    @apply m-0 p-0;
+  }
+
+  img {
+    @apply align-middle;
+  }
+}
